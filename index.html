@@ -2,99 +2,116 @@
     <head>
         <meta charset="utf-8"/>
         <title>Steel Rock!</title>
+        <link href="styles.css"
+              rel="stylesheet"/>
     </head>
     <body>
-        <table cellspacing="20">
-            <tr>
-                <td>
-                    <img src="avatar.jpeg" width="200" alt="тут мое фото" />
+        <div class="container">
+            <div class="info">
+                <img src="avatar.jpeg" alt="тут мое фото" class="avatar" />
 
-                </td>
-                <td>
+                <div class="info-text">
                     <h1>Сергей Кулаков</h1>
-                    <p><em>Я начинающий программист.</em></p>
+                    <p>Я начинающий программист.</p>
                     <p>Также я рок-музыкант, аранжировщик, а еще <strong>люблю свою жену и Леву!</strong></p>
 
-                </td>
-            </tr>
-        </table>
+                    <h4>Мои социальный сети</h4>
 
-        <hr />
-
-        <h2>Мои социальный сети</h2>
-        <ul type="square">
-            <li><a href="https://vk.com/em_steel" target="_blank">ВК</a></li>
-            <li><a href="https://t.me/kulakov_steel" target="_blank">ТГ</a></li>
-        </ul>
-
-        <hr />
-
-        <h2>Мои Хобби</h2>
-        <ol>
-            <li>Музыка</li>
-            <li>Спорт: тренажерный зал</li>
-            <li>Моделирование</li>
-            <li>Видеоигры</li>
-            <li>Путешествия</li>
-            <li>Танцы с женой: бачата</li>
-        </ol>
-
-        <hr />
-
-        <h2>Опыт работы</h2>
-        <table border="2">
-          
-            <thead>
-                <tr>
-                    <th>Компания</th>
-                    <th>Должность</th>
-                    <th>год</th>
-                </tr>
-            </thead>
-            <tbody>
-                            <tr>
-                <td>Kulturati</td>
-                <td>Jun</td>
-                <td>2025-...</td>
-            </tr>
-            <tr>
-                <td>Крутая АйТи компания</td>
-                <td>Senior</td>
-                <td>2026-...</td>
-            </tr>
-            </tbody>
-            <tfoot></tfoot>
-
-        </table>
-
-        <hr />
-
-        <h2>Моя рок-группа Ravdina</h2>
-        <a href="bandlink_Ravdina.html">Посмотреть bandlink</a>
-
-        <hr />
-
-        <h2>Связаться со мной</h2>
-
-        <form action="/">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя..." />
-
-            <br />
-
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите адрес..." />
-
-            <br />
-
-            <label for="etxt">Ваше сообщение:</label>
-            <br />
-            <textarea id="text" rows="3" cols="20"></textarea>
-            <br />
+                    <a href="https://vk.com/em_steel" target="_blank">ВК</a>
+                    |
+                    <a href="https://t.me/kulakov_steel" target="_blank">ТГ</a>
+                </div>
+            </div>
 
 
-            <input type="submit" value="Связатьтся!" />
 
-        </form>
+
+
+
+
+
+            <div class="card bg-yellow">
+                <h2>Мои Хобби</h2>
+                <ol class="list">
+                    <li>Музыка</li>
+                    <li>Спорт: тренажерный зал</li>
+                    <li>Моделирование</li>
+                    <li>Видеоигры</li>
+                    <li>Путешествия</li>
+                    <li>Танцы с женой: бачата</li>
+                </ol>
+            </div>
+
+            <div class="card bg-green">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <tr>
+                        <td>Medooza</td>
+                        <td>продавец</td>
+                        <td>2023-2025</td>
+                    </tr>
+                    <tr>
+                        <td>Kulturati</td>
+                        <td>Jun</td>
+                        <td>2025-...</td>
+                    </tr>
+                    <tr>
+                        <td>Крутая АйТи компания</td>
+                        <td>Senior</td>
+                        <td>2026-...</td>
+                    </tr>
+                    <tr>
+                        <td>Музыкант</td>
+                        <td>гитарист</td>
+                        <td>2008-now</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <div class="card bg-red">
+                <h2>Моя рок-группа Ravdina</h2>
+                <ul class="link-list">
+                    <li>
+                        <a href="https://band.link/RAVDINA">Посмотреть bandlink</a>
+
+                    </li>
+                    <li>
+                        <a href="https://music.yandex.ru/artist/9657529">Посмотреть на Яндекс.Музыка</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2>Связаться со мной</h2>
+
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите имя..." />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Ваш Email:</label>
+                            <input type="email" id="email" placeholder="Введите адрес..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="etxt">Ваше сообщение:</label>
+                        <textarea id="text" rows="3" cols="20"></textarea>
+                    </div>
+
+                    <input class="btn" type="submit" value="Связатьтся!" />
+                </form>
+            </div>
+
+            <div class="position">
+                <div class="box"></div>
+            </div>
+        </div>
     </body>
 </html>
